@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8"/>
     <title>My First Web Page</title>
+    <link href="style.css" rel="stylesheet"/>
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
         <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -18,20 +19,20 @@
     </header>
 
     <article>
-      <h2>The Basic Language of the Web: HTML</h2>
+      <header>
+        <h2>The Basic Language of the Web: HTML</h2>
 
-      <img src="laura-jones.jpg" 
-      alt="Laura Jones's photo" 
-      width="50"
-      height="50" />
+        <img src="laura-jones.jpg" 
+        alt="Laura Jones's photo" 
+        width="50"
+        height="50" />
 
-      <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
-
-      <img src="post-img.jpg"
-      alt="HTML code on a screen"
-      width="500"
-      height="200" />
-
+        <p id="auther">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <img src="post-img.jpg"
+        alt="HTML code on a screen"
+        width="500"
+        height="200" />
+      </header>
       <p>All modern websites and web applications are built using three <em>fundamental</em> technologies:
         HTML, CSS and JavaScript. These are the languages of the web.
         </p>
@@ -73,28 +74,29 @@
       <p>Hopefully you learned something new here. See you next time!</p>
 
       <h4>Related posts</h4>
+    </article>
 
-      <ul>
+    <aside>
+      <ul class="related">
         <li>
-          <img src="related-1.jpg" width="75" height="75" />
+          <img src="related-1.jpg" alt="Personal Programming" width="75" height="75" />
           <a href="index.html">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-auther">By Jonas Schmedtmann</p>
         </li>
 
         <li>
-          <img src="related-2.jpg" width="75" height="75" />
+          <img src="related-2.jpg" alt="Lightnight" width="75" height="75" />
           <a href="index.html">The Unknown Powers of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="related-auther">By Jim Dillon</p>
         </li>
 
         <li>
-          <img src="related-3.jpg" with="75" height="75"/>
-          <a href="index.html">Why JavaScript is AwesomeS</a>
-          <p>By Matilda</p>
+          <img src="related-3.jpg" alt="JavaScript code on a screen" width="75" height="75"/>
+          <a href="index.html">Why JavaScript is Awesome</a>
+          <p class="related-auther">By Matilda</p>
         </li>
       </ul>
-
-      <fotter>Copyright &copy; 2027 by The Code Magazine.</fotter>
-    </article>
+    </aside>
+    <fotter><p>Copyright &copy; 2027 by The Code Magazine.</p></fotter>
   </body>
 </html>
