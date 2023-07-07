@@ -1,10 +1,7 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li{
+body{
   font-family:sans-serif;
+  color:#444;
+  border-top:10px solid #1098ad;
 }
 
 h1,
@@ -20,28 +17,19 @@ h1{
 }
 h2{
   font-size:40px;
-  font-style:normal;
-  text-transform:none;
 }
 h3{
   font-size:30px;
-  font-style:normal;
-  text-transform:none;
 }
 h4{
-  color:#444;
   font-size:20px;
-  font-style:normal;
   text-transform:uppercase;
 }
 p{
-  color: #444;
   font-size:22px;
-  text-transform:none;
   line-height:1.5;
 }
 li{
-  color:#444;
   font-size:20px;
   line-height:1.5;
 }
@@ -49,9 +37,6 @@ li{
 #auther {
   font-style: italic;
   font-size:18px;
-}
-fotter p {
-  font-size: 16px;
 }
 
 .related-auther{
@@ -62,7 +47,6 @@ fotter p {
   list-style:none;
 }
 .main-header{
-  border-top:10px solid #1098ad;
   background-color:#f7f7f7;
 }
 aside{
@@ -70,21 +54,18 @@ aside{
   border-top:5px solid #1098ad;
   border-bottom:5px solid #1098ad;
 }
-/*body{
-  border-top:10px solid #1098ad;
-}*/
+
 li:last-child{
   font-style:italic;
 }
-a{
-  color:#1098ad;
-  text-decoration:none;
-}
-
 li:first-child{
   font-weight:bold;
 }
 
+a:any-link{
+  color:#1098ad;
+  text-decoration:none;
+}
 a:hover{
   color:orangered;
   font-weight:bold;
@@ -94,3 +75,8 @@ a:active{
   background-color:#444;
   font-style:italic;
 }
+
+fotter p {
+  font-size: 16px;
+}
+
